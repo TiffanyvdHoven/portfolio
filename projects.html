@@ -2,51 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Tiffany van den Hoven - web designer & font-end-developer </title>
+    <title> Tiffany van den hoven, freelance front-end-developer en webdesigner. </title>
      <link rel="stylesheet" type="text/css" href="style.css">
-     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-  </head>
+<link href="https://fonts.googleapis.com/css?family=Nunito:300|Roboto:300,400" rel="stylesheet">  </head>
 
   <body>
 
     <header>
-      <img src="img/workspace.jpg" alt="workspace illustration header">
+      <div class="parallax"> </div>
+      <img class="header-img" src="img/workspace.svg" alt="workspace illustration header">
       <nav>
         <ul>
-          <li> <a href=""> Home </a> </li>
-          <li> <a href=""> Projects </a> </li>
-          <li> <a href=""> Contact </a> </li>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="projects.html" class="active"> Projecten </a> </li>
+          <li> <a href="contact.html"> Contact </a> </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <img src="img/Tiffany.jpg" alt="illustration of Tiffany">
-        <p> Here's a selection of some recent work. If you would like more information about a certain project or want more information for your own project please <a href=""> contact me </a> .</p>
+
+      <section class="project-wrapper">
+        <div class="project-1">
+          <img class="project-img" src="img/build-and-learn-project.jpg" alt="project for build and learn V1">
+          <h1 class="white-text project-h1"> Build-and-learn project </h1>
+          <h2 class="white-text project-h2"> HTML, CSS and Javascript </h2>
+          <p class="white-text"> Voor het build-and-learn platform heb ik een logo ontworpen, een mobiel responsive menu gemaakt en de about section vorm gegeven. </p>
+          <button class="project-button-1"> Bekijk het project </button>
+        </div>
       </section>
 
-      <section>
-        <img src="img/build-and-learn-project.jpg" alt="project for build and learn V1">
-        <h1> Build-and-learn project </h1>
-        <h2> HTML, CSS and Javascript </h2>
-        <p> I worked on a remote group project for the build and learn platform. I did the design of the page and most parts of the development of the webpage using HTML, CSS and Javascript. </p>
-        <button> VIEW PROJECT </button>
+      <section class="project-wrapper">
+        <div class="project-2">
+          <img class="project-img" src="img/filter-function.jpg" alt="filter function made with HTML and CSS">
+          <h1 class="white-text project-h1"> Selection page </h1>
+          <h2 class="white-text project-h2"> HTML and CSS </h2>
+          <p class="white-text"> Als onderdeel van het build-and-learn project heb ik een pagina gecreeërd waarop de build-and-learn projecten gefiltert kunnen worden door middel van een menu boven aan de pagina. </p>
+          <button class="project-button-2"> Bekijk het project </button>
+        </div>
       </section>
 
-      <section>
-        <img src="img/filter-function.jpg" alt="filter function made with HTML and CSS">
-        <h1> Selection page </h1>
-        <h2> HTML and CSS </h2>
-        <p> Part of the Build and Learn project. A page where you can choose a categorie and filter the projects. I designed the page and wrote all of the HTML and CSS to make it work. </p>
-        <button> VIEW PROJECT </button>
-      </section>
-
-      <section>
-        <h1> More Projects </h1>
-        <h2> PHP </h2>
-        <p> Contact form that will send an e-mail to the website owner made using PHP. </p>
-        <button> VIEW PROJECT </button>
+      <section class="project-wrapper">
+        <div class="project-3">
+          <h1 class="white-text project-h1"> More Projects </h1>
+          <h2 class="white-text project-h2"> PHP </h2>
+          <p class="white-text"> Contact form that will send an e-mail to the website owner made using PHP. </p>
+          <button class="project-button-3"> Bekijk het project </button>
+        </div>
       </section>
 
     </main>

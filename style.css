@@ -45,6 +45,7 @@ p,
 a {
   font-size: 16px;
   font-weight: 300;
+  font-family: 'Nunito', sans-serif;
 }
 
 .white-text {
@@ -73,6 +74,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 10;
 }
 
 }
@@ -105,11 +107,15 @@ nav a:hover {
   }
 }
 
+.active {
+  color: #2090A4;
+}
+
 /* Styling sections */
 
 .intro {
   padding-bottom: 6em;
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .contact {
@@ -148,6 +154,7 @@ nav a:hover {
 		border-radius: 180px;
 		font-size: 16px;
 		text-decoration: none;
+    transition: 0.3s;
 	}
 
 	.button:hover {
@@ -265,3 +272,133 @@ footer {
 }
 
 }
+
+/* Project page styling */
+
+/* project page intro styling */
+
+.project-intro {
+  padding-bottom: 5em;
+  padding-top: 2em;
+}
+
+.text-padding {
+  padding-top: 1em;
+}
+
+/* project card styling  */
+
+.project-img {
+  width: 75%;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+
+.project-1 {
+  background-color: #86CDD1;
+}
+
+.project-2 {
+  background-color: #EE6366;
+}
+
+.project-3 {
+  background-color: #F8B818;
+}
+
+/* project cards typography */
+
+.project-h1 {
+  font-size: 27px;
+  padding-top: 0.5em;
+  line-height: 32px;
+}
+
+.project-h2 {
+  font-weight: lighter;
+  font-size: 16px;
+  padding-bottom: 1em;
+}
+
+/* white space around cards on bigger screens */
+
+@media (min-width: 600px) {
+.project-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+}
+
+@media (min-width: 992px){
+.project-wrapper {
+    max-width: 970px;
+}
+}
+
+@media (min-width: 600px){
+.project-wrapper {
+    max-width: 750px;
+}
+}
+
+/* project button styling  */
+
+	.project-button-1,
+  .project-button-2,
+  .project-button-3 {
+		width: 80%;
+		margin: 30px 10% 0px 10%;
+    color: white;
+    border: solid 2px white;
+		padding: 5px;
+		border-radius: 180px;
+		font-size: 16px;
+		text-decoration: none;
+    transition: 0.3s;
+	}
+
+  .project-button-1 {
+    background-color: #86CDD1;
+  }
+
+  .project-button-1:hover {
+    background-color: white;
+    color: #86CDD1;
+  }
+
+  .project-button-2 {
+    background-color: #EE6366;
+  }
+
+  .project-button-2:hover {
+    background-color: white;
+    color: #EE6366;
+  }
+
+  .project-button-3 {
+    background-color: #F8B818;
+  }
+
+  .project-button-3:hover {
+    background-color: white;
+    color: #F8B818;
+  }
+
+
+  @media (min-width: 500px) {
+    .project-button-1,
+    .project-button-2,
+    .project-button-3 {
+      	width: 33%;
+        margin: 30px 33% 0px 33%;
+    }
