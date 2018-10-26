@@ -84,6 +84,8 @@ a {
 nav ul {
 	display: flex;
   justify-content: center;
+  display: -webkit-box;
+   -webkit-box-pack: center; /* justify-content */
 	list-style-type: none;
 }
 
