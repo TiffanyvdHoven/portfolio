@@ -88,19 +88,17 @@ nav ul {
 }
 
 nav ul:first-child {
-  padding-left: 3em;
+  padding-right: 2em;
 }
 
 nav li {
-  padding-right: 3em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em;
 }
 
 nav a {
 	text-decoration: none;
 	color: black;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 nav a:hover {
