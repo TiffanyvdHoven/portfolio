@@ -3,7 +3,6 @@
   text-align: center;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   line-height: 1.6;
 }
 
@@ -88,8 +87,14 @@ nav ul {
 	list-style-type: none;
 }
 
+nav ul:first-child {
+  padding-left: 3em;
+}
+
 nav li {
-  padding: 2em;
+  padding-right: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 nav a {
