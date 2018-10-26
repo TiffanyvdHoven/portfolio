@@ -84,17 +84,19 @@ a {
 nav ul {
 	display: flex;
   justify-content: center;
-  display: -webkit-box;
-   -webkit-box-pack: center; /* justify-content */
+  display: -webkit-box; /* flexbox voor safari */
+  -webkit-box-pack: center; /* justify-content voor safari */
 	list-style-type: none;
 }
 
 nav ul:first-child {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 nav li {
-  padding: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 nav a {
