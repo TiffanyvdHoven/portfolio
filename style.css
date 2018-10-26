@@ -108,12 +108,6 @@ nav a:hover {
 	color: #86CDD1;
 }
 
-@media (max-width: 375px) {
-  nav li {
-    padding: 1em;
-  }
-}
-
 .active {
   color: #2090A4;
 }
