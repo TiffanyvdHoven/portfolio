@@ -120,7 +120,7 @@ nav a:hover {
 
 .contact {
   padding-top: 5em;
-  padding-bottom: 5em;
+  padding-bottom: 7em;
 }
 
 .carousel-item {
@@ -192,7 +192,7 @@ footer {
 
 .carousel-open:checked + .carousel-item {
     position: static;
-    opacity: 100;
+    opacity: 1;
 }
 
 .carousel-item {
@@ -209,10 +209,7 @@ footer {
     line-height: 35px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(0, -50%);
     cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     width: 40px;
     z-index: 10;
@@ -402,3 +399,4 @@ footer {
       	width: 33%;
         margin: 30px 33% 0px 33%;
     }
+}
