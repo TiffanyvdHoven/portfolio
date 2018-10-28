@@ -67,7 +67,7 @@ a {
 
  .header-img-desktop {
     background-image: url("img/workspace.svg");
-    height: 700px;
+    height: 600px;
     width: 100%;
     /* background-attachment: fixed;  */
     background-position: center;
