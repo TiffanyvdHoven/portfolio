@@ -59,7 +59,7 @@ a {
   margin: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1100px) {
 
   .header-img {
     display: none;
@@ -67,8 +67,9 @@ a {
 
  .header-img-desktop {
     background-image: url("img/workspace.svg");
-    height: 500px;
+    height: 700px;
     width: 100%;
+    /* background-attachment: fixed;  */
     background-position: center;
     background-size: cover;
 }
