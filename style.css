@@ -65,16 +65,12 @@ a {
     display: none;
   }
 
-.parallax {
+ .header-img-desktop {
     background-image: url("img/workspace.svg");
-    height: 600px;
+    height: 500px;
     width: 100%;
-    height: 600px;
-    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    z-index: 10;
 }
 
 }
@@ -400,4 +396,11 @@ footer {
       	width: 33%;
         margin: 30px 33% 0px 33%;
     }
+}
+
+/* contact page */
+
+.contact-page {
+  padding-top: 2em;
+  padding-bottom: 5em;
 }
