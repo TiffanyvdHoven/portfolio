@@ -116,8 +116,13 @@ nav a:hover {
   padding-top: 2em;
 }
 
+.projects {
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
 .contact {
-  padding-top: 5em;
+  padding-top: 2em;
   padding-bottom: 7em;
 }
 
@@ -130,6 +135,10 @@ nav a:hover {
     background-color: #86CDD1;
     padding-bottom: 6em;
     padding-top: 3em;
+  }
+
+  .padding-projects-section {
+    padding-top: 2em;
   }
 
   .circle-img {
@@ -388,7 +397,6 @@ footer {
     background-color: white;
     color: #F8B818;
   }
-
 
   @media (min-width: 500px) {
     .project-button-1,
