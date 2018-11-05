@@ -52,14 +52,38 @@ a {
     color: white;
 }
 
+/* header styling */
+
+.header-img {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 1367px) {
+
+  .header-img {
+    display: none;
+  }
+
+ .header-img-desktop {
+    background-image: url("img/workspace.svg");
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+}
+
 /* menu styling */
 
-nav {
+nav ul {
 	display: flex;
   justify-content: center;
   display: -webkit-box; /* flexbox voor safari */
   -webkit-box-pack: center; /* justify-content voor safari */
-  background-color: white;
+	list-style-type: none;
 }
 
 nav ul:first-child {
@@ -70,7 +94,6 @@ nav li {
   padding-right: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
-  list-style-type: none;
 }
 
 nav a {
@@ -86,51 +109,16 @@ nav a:hover {
   color: #2090A4;
 }
 
-
-/* paralax effect header */
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax__layer--back{
-  transform: translateZ(-1px) scale(2);
-  background-image: url('img/workspace.svg');
-  background-position: center;
-  background-size: cover;
-}
-
-.parallax__layer--base {
-  transform: translateZ(0);
-  margin-top: 400px;
-}
-
-
-
 /* Styling sections */
 
 .intro {
   padding-bottom: 6em;
   padding-top: 2em;
-  background-color: white;
 }
 
 .projects {
   padding-bottom: 3em;
   padding-top: 3em;
-  background-color: white;
 }
 
 .contact {
