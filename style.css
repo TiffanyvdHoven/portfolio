@@ -60,8 +60,15 @@ a {
   margin: auto;
   height: 400px;
   background-color: #86CDD1;
+  color: white;
   padding-top: 50px; /* for fixed top header */
   z-index: -1; /* for header layer */
+}
+
+.header-text {
+  padding-top: 100px;
+  font-size: 30px;
+  color: white;
 }
 
 .tiffany-img {
