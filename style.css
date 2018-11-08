@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -54,7 +55,7 @@ a {
 
 /* header styling */
 
-.header-img-desktop {
+.header-background {
   width: 100%;
   margin: auto;
   height: 400px;
@@ -63,7 +64,7 @@ a {
   z-index: -1; /* for header layer */
 }
 
-.head-img {
+.tiffany-img {
   z-index: 0;
   margin-top: -6em;
 }
@@ -72,7 +73,7 @@ a {
 
 @media (min-width: 1367px) {
 
- .header-img-desktop {
+ .header-background {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -129,19 +130,11 @@ nav a:hover {
 
 /* Styling sections */
 
-
 .intro {
   padding-bottom: 6em;
-  /* padding-top: 4em; */
-}
-
-.projects {
-  padding-bottom: 3em;
-  padding-top: 3em;
 }
 
 .contact {
-  padding-top: 2em;
   padding-bottom: 7em;
 }
 
@@ -296,18 +289,7 @@ footer {
 
 }
 
-/* Project page styling */
-
-/* project page intro styling */
-
-.project-intro {
-  padding-bottom: 5em;
-  padding-top: 2em;
-}
-
-.text-padding {
-  padding-top: 1em;
-}
+/* Project section styling */
 
 /* project card styling  */
 
@@ -424,11 +406,4 @@ footer {
       	width: 33%;
         margin: 30px 33% 0px 33%;
     }
-}
-
-/* contact page */
-
-.contact-page {
-  padding-top: 2em;
-  padding-bottom: 5em;
 }
