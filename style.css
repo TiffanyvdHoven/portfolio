@@ -5,6 +5,7 @@
   margin: 0;
   line-height: 1.6;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .wrapper {
