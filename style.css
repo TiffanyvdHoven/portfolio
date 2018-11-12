@@ -53,6 +53,7 @@ a {
     color: white;
 }
 
+
 @media (max-width: 350px) {
 h1 {
   font-size: 30px;
@@ -184,7 +185,7 @@ nav a:hover {
     padding-bottom: 6em;
     padding-top: 3em;
     height: 400px;
-    margin-bottom: 40em;
+    margin-bottom: 50em;
   }
 
   .flexbox {
@@ -197,7 +198,7 @@ nav a:hover {
   @media (min-width: 800px) {
 
   .description {
-    margin-bottom: 16em;
+    margin-bottom: 18em;
   }
 
   .flexbox {
