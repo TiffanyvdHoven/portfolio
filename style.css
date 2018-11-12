@@ -3,7 +3,7 @@
   text-align: center;
   box-sizing: border-box;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.8;
   scroll-behavior: smooth;
 }
 
@@ -153,19 +153,14 @@ nav a:hover {
 /* Styling sections */
 
 .intro {
-  padding-bottom: 6em;
+  padding-bottom: 9em;
 }
 
 .contact {
-  padding-bottom: 7em;
+  padding-bottom: 9em;
 }
 
-.carousel-item {
-  padding-top: 2em;
-  padding-bottom: 2em
-}
-
-  .padding-projects-section {
+.padding-projects-section {
     padding-top: 2em;
   }
 
