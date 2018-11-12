@@ -157,6 +157,7 @@ nav a:hover {
 }
 
 .contact {
+  margin-top: 2em;
   padding-bottom: 9em;
 }
 
@@ -175,7 +176,7 @@ nav a:hover {
   .development {
     border-radius: 5px;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
   }
 
   .description {
@@ -183,7 +184,7 @@ nav a:hover {
     padding-bottom: 6em;
     padding-top: 3em;
     height: 400px;
-    margin-bottom: 30em;
+    margin-bottom: 40em;
   }
 
   .flexbox {
@@ -193,16 +194,10 @@ nav a:hover {
     margin-top: 40px;
   }
 
-@media (max-width: 400px) {
-    .description {
-      margin-bottom: 35em;
-    }
-}
-
   @media (min-width: 800px) {
 
   .description {
-    margin-bottom: 12em;
+    margin-bottom: 16em;
   }
 
   .flexbox {
