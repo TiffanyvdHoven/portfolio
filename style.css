@@ -7,7 +7,8 @@
   scroll-behavior: smooth;
 }
 
-.wrapper {
+.wrapper,
+.section-wrapper {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -160,11 +161,6 @@ nav a:hover {
   padding-bottom: 7em;
 }
 
-.carousel-item {
-  padding-top: 2em;
-  padding-bottom: 2em
-}
-
   .padding-projects-section {
     padding-top: 2em;
   }
@@ -177,10 +173,16 @@ nav a:hover {
   }
 
   .webdesign,
+  .webdesign2,
   .development {
     border-radius: 5px;
     background-color: white;
     padding: 20px;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
+    box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
+    margin: 10px;
   }
 
   .description {
@@ -188,7 +190,7 @@ nav a:hover {
     padding-bottom: 6em;
     padding-top: 3em;
     height: 400px;
-    margin-bottom: 30em;
+    margin-bottom: 55em;
   }
 
   .flexbox {
@@ -198,13 +200,19 @@ nav a:hover {
     margin-top: 40px;
   }
 
-@media (max-width: 400px) {
+@media (min-width: 300px) {
     .description {
-      margin-bottom: 35em;
+      margin-bottom: 68em;
     }
 }
 
-  @media (min-width: 800px) {
+@media (min-width: 440px) {
+    .description {
+      margin-bottom: 60em;
+    }
+}
+
+  @media (min-width: 1000px) {
 
   .description {
     margin-bottom: 12em;
@@ -212,18 +220,18 @@ nav a:hover {
 
   .flexbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
   }
 
     .webdesign,
+    .webdesign2,
     .development {
-      width: 48%;
+      width: 25%;
       margin: 0;
+      margin-left: 20px;
+      margin-right: 20px;
       height: 450px;
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
-      box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
     }
   }
 
