@@ -53,11 +53,16 @@ a {
     color: white;
 }
 
+@media (max-width: 350px) {
+h1 {
+  font-size: 30px;
+}
+}
+
 /* header styling */
 
 .header-background {
   width: 100%;
-  /* height: 450px; */
   height: 500px;
   background-color: #86CDD1;
   color: white;
@@ -160,12 +165,6 @@ nav a:hover {
   padding-bottom: 2em
 }
 
-  .description {
-    background-color: #86CDD1;
-    padding-bottom: 6em;
-    padding-top: 3em;
-  }
-
   .padding-projects-section {
     padding-top: 2em;
   }
@@ -176,6 +175,58 @@ nav a:hover {
   border-radius: 50%;
   border: 10px solid white;
   }
+
+  .webdesign,
+  .development {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .description {
+    background-color: #86CDD1;
+    padding-bottom: 6em;
+    padding-top: 3em;
+    height: 400px;
+    margin-bottom: 30em;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+@media (max-width: 400px) {
+    .description {
+      margin-bottom: 35em;
+    }
+}
+
+  @media (min-width: 800px) {
+
+  .description {
+    margin-bottom: 12em;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+    .webdesign,
+    .development {
+      width: 48%;
+      margin: 0;
+      height: 450px;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
+      box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
+    }
+  }
+
 
 /* button styling */
 
@@ -210,100 +261,6 @@ nav a:hover {
 footer {
   background-color: #86CDD1;
   padding: 3em;
-}
-
-.carousel-indicators,
-.carousel-control {
-  display: none;
-}
-
-/* CSS only carousel*/
-
-@media (min-width: 600px) {
-
-.carousel-inner {
-    position: relative;
-    width: 100%;
-}
-
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 1;
-}
-
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-}
-
-.carousel-control {
-    color: white;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-
-.carousel-control.prev {
-    left: 2%;
-}
-
-.carousel-control.next {
-    right: 2%;
-}
-
-.carousel-control:hover {
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-    display: block;
-}
-
-.carousel-indicators {
-    list-style: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10%;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #2090A4;
-}
-
 }
 
 /* Project section styling */
