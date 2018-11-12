@@ -78,7 +78,7 @@ h1 {
 /* Styling for typwriter animation */
 
 .header-text {
-  padding-top: 130px;
+  padding-top: 80px;
   font-size: 40px;
   color: white;
   margin: auto;
@@ -88,7 +88,7 @@ h1 {
 @media (min-width: 700px) {
 
 .header-text {
-  padding-top: 170px;
+  /* padding-top: 170px; */
   font-size: 50px;
 }
 
@@ -97,7 +97,7 @@ h1 {
 @media (min-width: 1200px) {
 
 .header-text {
-  padding-top: 170px;
+  /* padding-top: 170px; */
   font-size: 70px;
 }
 
