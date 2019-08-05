@@ -1,5 +1,7 @@
+/* ---------- ALGEMENE STYLING -----------  */
+
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-align: center;
   box-sizing: border-box;
   margin: 0;
@@ -22,11 +24,15 @@
 
 @media (min-width: 768px){
 .wrapper {
-    max-width: 750px;
+    max-width: 900px;
 }
 }
 
-/* Typography styling */
+.padding-top {
+    padding-top: 20px;
+}
+
+/* ---------- TYPOGRAPHY STYLING -----------  */
 
 h1 {
   color: #86CDD1;
@@ -46,181 +52,452 @@ p,
 a {
   font-size: 16px;
   font-weight: 300;
-  font-family: 'Nunito', sans-serif;
 }
 
 .white-text {
     color: white;
 }
 
+.black-text {
+  color: black;
+  font-weight: 600;
+}
+
+.align-left {
+  text-align: left;
+}
+
 @media (max-width: 350px) {
-h1 {
-  font-size: 30px;
-}
-}
-
-/* header styling */
-
-.header-background {
-  width: 100%;
-  height: 500px;
-  background-color: #86CDD1;
-  color: white;
-  padding-top: 50px; /* for fixed top header */
-  z-index: -1; /* for header layer */
+  h1 {
+    font-size: 30px;
+  }
 }
 
-.tiffany-img {
-  z-index: 0;
-  margin-top: -6em;
+/* ---------- NAVIGATION STYLING -----------  */
+
+/* basic naviagtion styling */
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
 }
 
-/* Styling for typwriter animation */
-
-.header-text {
-  padding-top: 80px;
-  font-size: 40px;
-  color: white;
-  margin: auto;
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
+nav a:hover {
+  color: #86CDD1;
+}
+
+
+/* navigation for small screens (up to 420px) */
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+    height: 50px;
+  }
+
+  .logo {
+    width: 60px;
+    margin-top: 10px;
+  }
+
+  ul {
+    padding-left: 0px;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .right {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+  }
+
+
+/* navigation for screens between 420px and 700px */
+
+@media (min-width: 470px) {
+
+  nav ul {
+    /* fixed menu styling */
+    height: 60px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .left {
+    display: block;
+    float: left;
+  }
+
+  .right {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 20px;
+    float: left;
+  }
+
+}
+
+/* navigation for screens larger than 700px*/
 
 @media (min-width: 700px) {
-
-.header-text {
-  /* padding-top: 170px; */
-  font-size: 50px;
-}
-
-}
-
-@media (min-width: 1200px) {
-
-.header-text {
-  /* padding-top: 170px; */
-  font-size: 70px;
-}
-
-}
-
-/* menu styling */
-
 
 nav ul {
   /* flexbox styling */
 	display: flex;
-  justify-content: center;
-  display: -webkit-box; /* flexbox voor safari */
-  -webkit-box-pack: center; /* justify-content voor safari */
-	list-style-type: none;
+  display: -webkit-flex; /* flexbox voor safari */
+  justify-content: flex-end;
+  -webkit-box-pack: flex-end; /* justify-content voor safari */
+  list-style-type: none;
+
   /* fixed menu styling */
   position: fixed;
   top: 0;
   width: 100%;
   background-color: white;
   z-index: 99;
-  height: 60px
+  height: 60px;
 }
 
-nav ul:first-child {
-  padding-left: 2em;
+.left {
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: auto;
 }
 
-nav li {
-  padding-right: 2em;
-  padding-top: 1em;
-  padding-bottom: 2em;
+.right {
+  margin-left: 2em;
+  margin-top: 20px;
 }
 
-nav a {
-	text-decoration: none;
-	color: black;
+.right:last-child {
+  margin-right: 15%;
 }
 
-/* hover menu colour */
+}
 
-nav a:hover {
-	color: #86CDD1;
+/* logo gets small with js on scroll */
+.small-logo {
+  width: 60px;
+  margin-top: 0px;
 }
 
 /* padding for menu sections  */
 
-#projects,
-#contact {
-  padding-top: 80px;
+#contact,
+#about {
+  padding-top: 8em;
 }
 
-/* Styling sections */
+#projects {
+  padding-top: 10em;
+}
+
+#responsive,
+#cms {
+  margin-top: 8em;
+}
+
+/* ---------- INTRO HEADER STYLING -----------  */
+
+.header-background {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 99%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 99%);
+  background: url(img/hero-img.jpg) fixed no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding-top: 50px; /* for fixed top header */
+  z-index: -1; /* for header layer */
+}
 
 .intro {
-  padding-bottom: 9em;
+  padding-top: 40px;
+  position: relative;
+  background-color: white;
+  width: 95%;
+  max-width: 1067px;
+  /* height: 440px; */
+  margin-top: -150px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
 }
 
-.contact {
-  margin-top: 3em;
-  padding-bottom: 8em;
+h1 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.padding-projects-section {
-    padding-top: 2em;
+.intro-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.intro-h1, .intro-p {
+  padding-bottom: 20px;
+  margin: auto;
+  width: 80%;
+}
+
+@media (min-width: 800px) {
+  .intro-p, .intro-h1 {
+    width: 70%;
+  }
+}
+
+
+/* ---------- WHAT WE DO SECTION -----------  */
+
+/* .circle-img {
+background-color: #86CDD1;
+width: 220px;
+height: 220px;
+border-radius: 50%;
+border: 10px solid white;
+margin: auto;
+} */
+
+.what-we-do {
+  margin-bottom: 6em;
+}
+
+.what-we-do-section {
+  margin-bottom: 5em;
+}
+
+.what-we-do-section > * {
+  text-align: left;
+}
+
+.flexbox {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+
+.what-we-do {
+  margin-bottom: 9em;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+  .what-we-do-section {
+    width: 30%;
+    padding: 10px;
+  }
+}
+
+/* ---------- CMS SECTION -----------  */
+
+/* CMS section mobile screens */
+/* text en afbeelding onder elkaar */
+
+.cms-flexbox {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #86CDD1;
+  max-width: 1067px;
+  margin: auto;
+}
+
+.cms-img, .cms-text {
+  width: 100%;
+}
+
+.cms-img {
+  padding-top: 60px;
+}
+
+.cms-text-box {
+  padding-top: 40px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+@media (min-width: 750px) {
+
+  .negative-margin-top {
+    margin-top: -60px;
   }
 
-  .circle-img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: 10px solid white;
+}
+
+/* CMS section larger screens */
+/* text en afbeelding naast elkaar */
+
+@media (min-width: 750px) {
+
+  .cms-flexbox {
+    flex-direction: row;
+    height: 550px;
+    padding-bottom: 0px;
   }
 
-  .webdesign,
-  .development {
-    border-radius: 5px;
-    background-color: white;
-    padding: 30px;
+  .cms-img {
+    padding-top: 0px;
+    width: 50%;
+    object-fit: cover;
   }
 
-  .description {
-    background-color: #86CDD1;
-    padding-bottom: 6em;
-    padding-top: 3em;
-    height: 400px;
-    margin-bottom: 40em;
+  .cms-text {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+/* ---------- PROJECT SECTION -----------  */
+
+.blog-grid {
+  padding-top: 40px;
+  margin: auto;
+}
+
+.blog-grid-img {
+  width: 80%;
+  padding-bottom: 10px;
+  height: 200px;
+}
+
+.blog-grid-p {
+  padding-bottom: 40px;
+}
+
+
+/* 3 row blog grid vanaf 500px */
+
+@media (min-width: 700px) {
+
+.blog {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  width: 33%;
+  padding-bottom: 40px;
+}
+
+.blog-grid-img {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.blog-grid {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
+.blog-grid-p {
+    padding-left: 20px;
+}
+
+.blog-post {
+  flex-basis: 28%;
+  -ms-flex: auto;
+  position: relative;
+  margin: 20px;
+}
+
+.large-screen-grid {
+  width: 90%;
+  margin: auto;
+  max-width: 1107px;
+}
+
+}
+
+/* ---------- RESPONSIVE SECTION -----------  */
+
+.responsive-section {
+  max-width: 1067px;
+  background-color: #86CDD1;
+  margin: auto;
+  margin-top: 10em;
+}
+
+@media (min-width: 1067px) {
+  .responsive-section {
+    height: 600px;
+    overflow: hidden;
+  }
+}
+
+/* text responsive section */
+
+.responsive-section-h1 {
+  width: 80%;
+  max-width: 747px;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.responsive-section-p {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+@media (min-width: 743px) {
+  .responsive-section-p {
+    width: 66%;
+    max-width: 625px;
+  }
+}
+
+/* image responsive section */
+
+.responsive-section-img {
+  position: relative;
+  top: 9px;
+  width: 90%;
+  margin-top: 60px;
+}
+
+@media (min-width: 720px) {
+  .responsive-section-img {
+    width: 60%;
+   }
+}
+
+@media (min-width: 975px) {
+  .responsive-section-img {
+    width: 40%;
+   }
+}
+
+/* ---------- CONTACT STYLING -----------  */
+
+  .contact {
+    margin-top: 3em;
+    padding-bottom: 8em;
   }
 
-  .flexbox {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  @media (min-width: 800px) {
-
-  .description {
-    margin-bottom: 16em;
-  }
-
-  .flexbox {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-
-    .webdesign,
-    .development {
-      width: 48%;
-      margin: 0;
-      height: 450px;
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
-      box-shadow: 0px 0px 10px 0px rgba(191,191,191,0.26);
-    }
-  }
-
-
-/* button styling */
+  /* button styling */
 
 	.button {
+    border-radius: 3px;
 		width: 80%;
 		margin: 30px 10% 0px 10%;
     color: white;
@@ -228,8 +505,7 @@ nav a:hover {
     color: #86CDD1;
 		border: solid 2px #86CDD1;
 		padding: 5px;
-		border-radius: 180px;
-		font-size: 16px;
+		font-size: 14px;
 		text-decoration: none;
     transition: 0.3s;
 	}
@@ -246,128 +522,215 @@ nav a:hover {
   }
 }
 
-/* footer styling */
+
+/* ---------- FOOTER SECTION -----------  */
 
 footer {
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 99%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 99%); */
+  clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 100%);
+  /* -webkit-clip-path: polygon(0 99%, 100% 80%, 100% 0, 0 0); */
   background-color: #86CDD1;
-  padding: 3em;
-}
-
-/* Project section styling */
-
-/* project card styling  */
-
-.project-img {
-  width: 75%;
-}
-
-.project-1,
-.project-2,
-.project-3 {
   padding-top: 5em;
-  padding-bottom: 5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 1em;
 }
 
-.project-1 {
+footer > p {
+  padding-bottom: 2em;
+}
+/* test */
+.container {
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.blog-grid-img {
+  display: block;
+  /* width: 80%; */
+  margin: auto;
+  object-fit: cover;
+  height: 400px;
+}
+
+.overlay {
+  -webkit-clip-path: polygon(0 48%, 100% 21%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 48%, 100% 21%, 100% 100%, 0% 100%);
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.95;
+}
+
+.overlay-button {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 8%;
+  background-color: white;
+  color: #86CDD1;
+  border: 2px solid #86CDD1;
+  border-radius: 3px;
+  padding: 5px;
+  width: 50%;
+  font-size: 14px;
+}
+
+.overlay-button:hover {
   background-color: #86CDD1;
+  color: white;
+  border: 2px solid white;
 }
 
-.project-2 {
-  background-color: #EE6366;
+.overlay-h2 {
+  position: absolute;
+  width: 50%;
+  top: 40%;
+  left: 25%;
+  /* padding-top: 45%; */
 }
 
-.project-3 {
-  background-color: #F8B818;
+.overlay-p {
+  position: absolute;
+  top: 55%;
+  width: 70%;
+  left: 15%;
 }
 
-/* project cards typography */
+@media (min-width: 644px) {
+  .overlay {
+    height: 80%;
+  }
+}
+
+@media (min-width: 700px) {
+
+  .overlay {
+    -webkit-clip-path: polygon(0 48%, 100% 21%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 48%, 100% 21%, 100% 100%, 0% 100%);
+    left: 0;
+    bottom: 10%;
+    height: 40%;
+  }
+
+  .container:hover .overlay {
+    -webkit-clip-path: polygon(0 38%, 100% 28%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 38%, 100% 28%, 100% 100%, 0% 100%);
+    height: 110%;
+  }
+
+  .overlay-button {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 15%;
+  }
+
+  .container:hover .overlay-button {
+    bottom: 6%;
+  }
+
+  /* .blog {
+    width: 50%;
+  } */
+
+  .overlay-p, .overlay-h2 {
+    visibility: hidden;
+  }
+
+  .container:hover .overlay-p,
+  .container:hover .overlay-h2 {
+    visibility: visible;
+  }
+
+  .overlay-h2 {
+    width: 90%;
+    left: 5%;
+  }
+
+
+}
+
+@media (min-width: 1067px) {
+
+  .container:hover .overlay {
+    height: 90%;
+  }
+
+  .blog {
+    width: 33%;
+    margin-bottom: -250px;
+  }
+
+  /* .no-show {
+    visibility: hidden;
+  } */
+
+  #projects {
+    margin-bottom: 25em;
+  }
+
+}
+
+/* ---------- PROJECT PAGE DONE -----------  */
+
+.responsive-section-project {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 99%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 99%);
+  width: 100%;
+  background-color: #86CDD1;
+  height: 400px;
+}
+
+.project-info {
+  margin-top: 4em;
+  margin-bottom: 7em;
+}
+
+.left-button {
+  width: 33%;
+  margin: 30px 80% 0px 0%;
+}
 
 .project-h1 {
-  font-size: 27px;
-  padding-top: 0.5em;
-  line-height: 32px;
+  width: 80%;
+  max-width: 747px;
+  margin: auto;
+  padding-top: 80px;
 }
 
-.project-h2 {
-  font-weight: lighter;
-  font-size: 16px;
-  padding-bottom: 1em;
+
+/* image responsive section */
+
+.project-img {
+  position: relative;
+  width: 90%;
+  margin-top: 120px;
 }
 
-/* white space around cards on bigger screens */
-
-@media (min-width: 600px) {
-.project-wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+@media (min-width: 464px) {
+  .project-img {
+    margin-top: 40px;
+   }
 }
 
-@media (min-width: 992px){
-.project-wrapper {
-    max-width: 970px;
-}
-}
-
-@media (min-width: 600px){
-.project-wrapper {
-    max-width: 750px;
-}
+@media (min-width: 720px) {
+  .project-img {
+    width: 60%;
+   }
 }
 
-/* project button styling  */
+@media (min-width: 1100px) {
+  .project-img {
+    margin-top: 16px;
+    width: 40%;
+    left: -20%;
+   }
 
-	.project-button-1,
-  .project-button-2,
-  .project-button-3 {
-		width: 80%;
-		margin: 30px 10% 0px 10%;
-    color: white;
-    border: solid 2px white;
-		padding: 5px;
-		border-radius: 180px;
-		font-size: 16px;
-		text-decoration: none;
-    transition: 0.3s;
-	}
-
-  .project-button-1 {
-    background-color: #86CDD1;
-  }
-
-  .project-button-1:hover {
-    background-color: white;
-    color: #86CDD1;
-  }
-
-  .project-button-2 {
-    background-color: #EE6366;
-  }
-
-  .project-button-2:hover {
-    background-color: white;
-    color: #EE6366;
-  }
-
-  .project-button-3 {
-    background-color: #F8B818;
-  }
-
-  .project-button-3:hover {
-    background-color: white;
-    color: #F8B818;
-  }
-
-  @media (min-width: 500px) {
-    .project-button-1,
-    .project-button-2,
-    .project-button-3 {
-      	width: 33%;
-        margin: 30px 33% 0px 33%;
-    }
+   .project-h1 {
+     width: 80%;
+     position: relative;
+     top: 25%;
+     left: 20%;
+   }
 }

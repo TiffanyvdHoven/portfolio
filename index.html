@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tiffany van den hoven | freelance front-end-developer en webdesigner.</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400%7CRoboto:300,400" rel="stylesheet">
-    <script src="typewriter.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,300|Nunito:600,300" rel="stylesheet">
+    <script type="text/javascript" src="scroll.js"></script>
   </head>
 
   <body>
 
-    <header id="about">
-      <div class="header-background">
-        <h1 class="header-text" class="white-text"> Mijn naam is Tiffany van den Hoven. </h1>
-      </div>
+    <header id="home">
+      <div class="header-background"> </div>
       <nav>
         <ul>
-          <li> <a href="#about"> Over mij </a> </li>
-          <li> <a href="#projects"> Projecten </a> </li>
-          <li> <a href="#contact"> Contact </a> </li>
+          <li class="left"><img id="logo" class="logo" src="img/logo.svg" alt="logo"/></li>
+          <li class="right"> <a href="#home"> Home </a> </li>
+          <li class="right"> <a href="#projects"> Projecten </a> </li>
+          <li class="right"> <a href="#contact"> Contact </a> </li>
         </ul>
       </nav>
     </header>
@@ -28,66 +27,78 @@
 
       <section class="intro">
         <div class="wrapper">
-          <img class="circle-img tiffany-img" src="img/Tiffany.jpeg" alt="illustration of Tiffany">
-          <h1> Over mij </h1>
-          <p> Mijn naam is Tiffany van den Hoven. Ik ben een freelance front-end-developer en webdesigner met een passie voor het creëren van mooie en gebruiksvriendelijke websites. Ik maak unieke op maat gemaakte websites waarmee je je onderscheid van de concurrentie.</p>
+          <h1 class="intro-h1"> Waar ik je mee kan helpen. </h1>
+          <div class="flexbox">
+
+          <div class="what-we-do-section">
+            <h2 class="black-text"> Web Design </h2>
+            <p>  Geen kant en klaar design of pakket maar een uniek op maat gemaakt web design waarmee u zich onderscheid van de concurrentie.</p>
+          </div>
+
+          <div class="what-we-do-section">
+            <h2 class="black-text"> Web Development </h2>
+            <p> Onze websites worden zo geprogrameerd dat ze goed werken op ieder formaat scherm, snel laden en goed gevonden worden in zoekmachines.</p>
+          </div>
+
+          <div class="what-we-do-section">
+            <h2 class="black-text"> Gebruiksvrienlijkheid </h2>
+            <p> Een gebruiksvriendelijke website is essentieel om nieuwe klanten te binden en bestaande klanten te houden. Daarom besteden wij extra aandacht aan ux design. </p>
+          </div>
+
+
+        </div>
         </div>
       </section>
 
-      <section class="description">
-        <div class="wrapper">
-          <h1 class="white-text"> Mijn Expertise </h1>
-
-          <div class="flexbox">
-
-          <div class="webdesign">
-            <img class="circle-img" src="img/webdesign.svg" alt="web design illustration">
-            <h2> Web Design </h2>
-            <p> Ik maak een uniek ontwerp op basis van uw wensen zodat uw website zich onderscheid van uw concurrentie. </p>
-          </div>
-
-          <div class="webdesign">
-            <img class="circle-img" src="img/front-end-development.svg" alt="front-end-development illustration">
-            <h2> Front-end-development </h2>
-            <p> ik creeër responsive websites die goed werken op ieder formaat scherm: desktop, mobiel en tablet.</p>
-          </div>
-
-        </div>
-
+    <section class="cms-flexbox" id="cms">
+      <img class="cms-img" src="img/hero-img.jpg"/>
+      <div class="cms-text">
+        <h1 class="cms-text-box negative-margin-top">Simpel zelf je website aanpassen</h1>
+        <p class="cms-text-box"> Nieuwe informatie toevoegen, de openingstijden veranderen of een blogpost plaatsen? De websites die ik maak worden geleverd met een gebruiksvriendelijke CMS. Hiermee kun je gemakkelijk zelf de content op de website aanpassen zonder dat je daar technische kennis voor nodig hebt. </p>
       </div>
     </section>
 
-      <section class="projects" id="projects">
+      <section class="large-screen-grid" id="projects">
         <h1> Recente projecten </h1>
+          <div class="blog-grid">
 
-      <section class="project-wrapper padding-projects-section">
-          <div class="project-1">
-          <img class="project-img" src="img/build-and-learn-project.jpg" alt="project for build and learn V1">
-          <h1 class="white-text project-h1"> Build-and-learn project </h1>
-          <h2 class="white-text project-h2"> HTML, CSS and Javascript </h2>
-          <p class="white-text"> Voor het build-and-learn platform heb ik een logo ontworpen, een mobiel responsive menu gemaakt en de about section vorm gegeven. </p>
-          <a href="https://tiffanyvdhoven.github.io/Build-and-Learn/" target="_blank"> <button class="project-button-1"> Bekijk het project </button> </a>
-        </div>
+        <div class="blog container">
+            <img class="blog-grid-img" src="img/project-3.jpg" alt="filter function made with HTML and CSS">
+            <div class="overlay">
+              <h2 class="overlay-h2"> Recepten website </h2>
+              <p class="overlay-p"> Compleet redesign van website en huisstijl voor een recepten website.</p>
+              <a href="https://receptenzondergluten.nl/" target="_blank"> <button class="overlay-button">  Bekijk Project </button> </a>
+            </div>
+          </div>
+
+          <div class="blog container">
+              <img class="blog-grid-img" src="img/project-2.jpg" alt="filter function made with HTML and CSS">
+              <div class="overlay">
+                <h2 class="overlay-h2"> Build-and-Learn </h2>
+                <p class=" overlay-p"> Samenwerking voor een nieuw platform voor build-and-learn.</p>
+                <a href="https://tiffanyvdhoven.github.io/Build-and-Learn/index.html" target="_blank"> <button class="overlay-button"> Bekijk Project </button> </a>
+              </div>
+            </div>
+
+
+            <div class="blog container">
+                <img class="blog-grid-img" src="img/hero-img.jpg" alt="filter function made with HTML and CSS">
+                <div class="overlay">
+                  <h2 class="overlay-h2"> Selection page</h2>
+                  <p class=" overlay-p"> Programma om projecten te filteren op basis van categorien.</p>
+                  <a href="https://tiffanyvdhoven.github.io/Build-and-Learn/projects.html" target="_blank"> <button class="overlay-button">  Bekijk Project </button> </a>
+                </div>
+              </div>
+
       </section>
 
-      <section class="project-wrapper">
-        <div class="project-2">
-          <img class="project-img" src="img/filter-function.jpg" alt="filter function made with HTML and CSS">
-          <h1 class="white-text project-h1"> Selection page </h1>
-          <h2 class="white-text project-h2"> HTML and CSS </h2>
-          <p class="white-text"> Als onderdeel van het build-and-learn project heb ik een pagina gecreeërd waarop de build-and-learn projecten gefilterd kunnen worden door middel van een menu boven aan de pagina. </p>
-            <a href="https://tiffanyvdhoven.github.io/Build-and-Learn/projects.html" target="_blank">  <button class="project-button-2"> Bekijk het project </button> </a>
-        </div>
+      <section class="responsive-section" id="responsive">
+        <h1 class="responsive-section-h1 white-text">Optimaal op ieder formaat scherm</h1>
+        <p class="responsive-section-p white-text">
+          De websites die ik maak zijn niet alleen responsive zodat ze goed werken op ieder formaat scherm. Ik zorg er ook voor dat ze er even mooi uit zien op alle soorten en maten schermen.
+        </p>
+        <img class="responsive-section-img" src="img/responsive.png" alt="responsive websites op maat"/>
       </section>
-
-      <!-- <section class="project-wrapper">
-        <div class="project-3">
-          <h1 class="white-text project-h1"> More Projects </h1>
-          <h2 class="white-text project-h2"> PHP </h2>
-          <p class="white-text"> Contact form that will send an e-mail to the website owner made using PHP. </p>
-          <button class="project-button-3"> Bekijk het project </button>
-        </div>
-      </section> -->
 
       <section class="contact" id="contact">
         <div class="wrapper">
@@ -101,7 +112,7 @@
     </main>
 
     <footer>
-      <p class="white-text"> Tiffany van den Hoven | &copy; 2018 </p>
+      <p class="white-text"> Tiffany van den Hoven | &copy; 2019 </p>
     </footer>
 
   </body>
